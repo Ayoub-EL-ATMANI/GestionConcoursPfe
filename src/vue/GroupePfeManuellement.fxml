@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="772.0" prefWidth="1107.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GroupePfeManuellement">
+   <children>
+      <VBox alignment="CENTER" prefHeight="60.0" prefWidth="1107.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="1109.0" style="-fx-background-color: #62b7af;" text="Former des Groupes De  Pfe Manuellement" />
+            <JFXButton fx:id="addGroupeID" onAction="#addGroupeFunction" prefHeight="25.0" prefWidth="189.0" style="-fx-background-color: #fff67c;" text="Add Groupe" />
+            <JFXButton fx:id="pdf" onAction="#generatePdf" prefHeight="35.0" prefWidth="239.0" style="-fx-background-color: #324c16;" text="PDF" textFill="#f8f5f5" />
+         </children>
+      </VBox>
+      <HBox fx:id="hbox" layoutX="49.0" layoutY="77.0" prefHeight="500.0" prefWidth="1044.0">
+         <children>
+            <VBox fx:id="vbox1" prefHeight="500.0" prefWidth="349.0">
+               <children>
+                  <JFXTreeTableView fx:id="ListeEtudiant" prefHeight="500.0" prefWidth="189.0" />
+               </children>
+            </VBox>
+            <VBox fx:id="vbox2" prefHeight="500.0" prefWidth="680.0">
+               <children>
+                  <JFXTreeTableView fx:id="ListeGroupe" prefHeight="500.0" prefWidth="643.0" />
+               </children>
+            </VBox>
+            <VBox fx:id="vbox3" prefHeight="500.0" prefWidth="344.0">
+               <children>
+                  <JFXTreeTableView fx:id="ListeEncadrant" prefHeight="500.0" prefWidth="189.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

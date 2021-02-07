@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.validation.IntegerValidator?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="600.0" text="Nouvelle Candidature" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Candidature">
+   <content>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Titre de Concours :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nom :" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Prenom :" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="CNE :" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="mail :" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Adresse :" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="tél :" GridPane.rowIndex="7">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Diplome :" GridPane.rowIndex="8">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Etablissement :" GridPane.rowIndex="9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btnValider" onAction="#validerClick" prefHeight="30.0" prefWidth="274.0" styleClass="lion-default" stylesheets="@../style/candidature.css" text="Valider" GridPane.rowIndex="12">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="txtTitre" GridPane.columnIndex="1" />
+                  <JFXTextField fx:id="txtNom" promptText="Nom" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXTextField fx:id="txtPrenom" promptText="Prenom" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <JFXTextField fx:id="txtCne" promptText="CNE : 10 chiffres" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <JFXTextField fx:id="txtMail" promptText="exemple@exemple.ee" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <JFXTextField fx:id="txtAdress" promptText="Addresse" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <JFXTextField fx:id="txtTel" promptText="0600000000" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <JFXTextField fx:id="txtDip" promptText="Diplome" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <JFXTextField fx:id="txtEta" promptText="Etablissement" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label text="Date de Naissance :" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXDatePicker fx:id="txtDate" prefHeight="25.0" prefWidth="291.0" promptText="DD/MM/YYYY" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Note du Baccalaureat :" GridPane.rowIndex="10">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Note de diplome Bac +2 :" GridPane.rowIndex="11">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtNoteBac" promptText="Note Bac" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <JFXTextField fx:id="txtNoteDip" promptText="Note Diplome" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <IntegerValidator GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <IntegerValidator GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <JFXButton onAction="#retourClick" prefHeight="32.0" prefWidth="264.0" styleClass="windows7-default" stylesheets="@../style/candidature.css" text="Retour à la page de conection" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+   </content>
+</TitledPane>

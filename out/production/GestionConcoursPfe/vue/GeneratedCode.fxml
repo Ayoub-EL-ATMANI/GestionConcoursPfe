@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="paneglobale" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GeneratedCode">
+   <children>
+      <VBox fx:id="vboxmanager" layoutX="25.0" layoutY="75.0" prefHeight="355.0" prefWidth="539.0">
+         <children>
+            <JFXTreeTableView fx:id="treeViewCode" />
+         </children></VBox>
+      <JFXTextField fx:id="txtnb" layoutX="165.0" layoutY="14.0" />
+      <JFXButton layoutX="308.0" layoutY="14.0" onAction="#generateclick" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #980;" text="generate" />
+   </children>
+</AnchorPane>

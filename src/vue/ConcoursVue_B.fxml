@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ConcoursVueB">
+   <children>
+      <Label layoutX="252.0" layoutY="81.0" text="Liste des concours" />
+      <JFXButton layoutX="85.0" layoutY="153.0" text="hfhhgfh" />
+      <JFXButton buttonType="RAISED" layoutX="200.0" layoutY="153.0" text="boooo" />
+   </children>
+</AnchorPane>
